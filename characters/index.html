@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilty Gear - Characters</title>
+    <link rel="icon" type="image/x-icon" href="/images/LOGO.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <script src="character-popup.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="/images/IMAGE_1.png" alt="Guilty Gear Logo" class="logo">
+        </div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="../index.html" class="active">Characters</a></li>
+                <li><a href="../mechanics.html">Game Mechanics</a></li>
+                <li><a href="../history.html">History</a></li>
+                <li><a href="../community.html">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="character-banner">
+            <div class="banner-overlay">
+              <h1>CHARACTERS</h1>
+            </div>
+          </section>
+          
+        <section class="character-filter">
+          <div class="filter-container">
+              <div class="filter-group">
+                  <h3>Season</h3>
+                  <div class="filter-buttons season-filters">
+                      <button class="season-filter-btn" data-filter="all">ALL</button>
+                      <button class="season-filter-btn" data-filter="season4">Season Pass 4</button>
+                      <button class="season-filter-btn" data-filter="season3">Season Pass 3</button>
+                      <button class="season-filter-btn" data-filter="season2">Season Pass 2</button>
+                      <button class="season-filter-btn" data-filter="season1">Season Pass 1</button>
+                      <button class="season-filter-btn" data-filter="base">Base Roster</button>
+                  </div>
+              </div>
+              
+              <div class="filter-group">
+                <h3>Battle Type</h3>
+                <div class="filter-buttons type-filters">
+                    <button class="type-filter-btn" data-filter="all">ALL</button>
+                    <button class="type-filter-btn battle-type balance" data-filter="balance">Balance</button>
+                    <button class="type-filter-btn battle-type power" data-filter="power">Power</button>
+                    <button class="type-filter-btn battle-type zoning" data-filter="zoning">Zoning</button>
+                    <button class="type-filter-btn battle-type rushdown" data-filter="rushdown">Rushdown</button>
+                    <button class="type-filter-btn battle-type oneshot" data-filter="oneshot">One Shot</button>
+                    <button class="type-filter-btn battle-type shooting" data-filter="shooting">Shooting</button>
+                    <button class="type-filter-btn battle-type unique" data-filter="unique">Unique</button>
+                </div>
+            </div>
+          </div>
+          
+          <div class="filter-actions">
+              <div id="character-counter" class="character-counter">Showing all characters</div>
+              <button id="reset-filters" class="reset-filters-btn">Reset Filters</button>
+          </div>
+      </section>
+
+        <section class="character-grid">
+            <!-- Base Roster Characters -->
+            <div class="character-card" data-season="base">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_11.png" alt="Sol Badguy" class="character-img">
+                    <div class="character-type balance">Balance</div>
+                </div>
+                <div class="character-name">SOL BADGUY</div>
+            </div>
+
+            <div class="character-card" data-season="base">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_13.png" alt="Ky Kiske" class="character-img">
+                    <div class="character-type balance">Balance</div>
+                </div>
+                <div class="character-name">KY KISKE</div>
+            </div>
+
+            <div class="character-card" data-season="base">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_15.png" alt="May" class="character-img">
+                    <div class="character-type power">Power</div>
+                </div>
+                <div class="character-name">MAY</div>
+            </div>
+
+            <div class="character-card" data-season="base">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_17.png" alt="Axl Low" class="character-img">
+                    <div class="character-type zoning">Zoning</div>
+                </div>
+                <div class="character-name">AXL LOW</div>
+            </div>
+
+            <div class="character-card" data-season="base">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_19.png" alt="Chipp Zanuff" class="character-img">
+                    <div class="character-type rushdown">Rushdown</div>
+                </div>
+                <div class="character-name">CHIPP ZANUFF</div>
+            </div>
+
+            <div class="character-card" data-season="base">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_21.png" alt="Potemkin" class="character-img">
+                    <div class="character-type power">Power</div>
+                </div>
+                <div class="character-name">POTEMKIN</div>
+            </div>
+
+            <div class="character-card" data-season="base">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_23.png" alt="Faust" class="character-img">
+                    <div class="character-type unique">Unique</div>
+                </div>
+                <div class="character-name">FAUST</div>
+            </div>
+
+            <div class="character-card" data-season="base">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_25.png" alt="Milia Rage" class="character-img">
+                    <div class="character-type rushdown">Rushdown</div>
+                </div>
+                <div class="character-name">MILIA RAGE</div>
+            </div>
+
+            <div class="character-card" data-season="base">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_27.png" alt="Zato" class="character-img">
+                    <div class="character-type unique">Unique</div>
+                </div>
+                <div class="character-name">ZATO=1</div>
+            </div>
+
+            <div class="character-card" data-season="base">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_29.png" alt="Ramlethal Valentine" class="character-img">
+                    <div class="character-type balance">Balance</div>
+                </div>
+                <div class="character-name">RAMLETHAL VALENTINE</div>
+            </div>
+
+            <div class="character-card" data-season="base">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_31.png" alt="Leo Whitefang" class="character-img">
+                    <div class="character-type rushdown">Rushdown</div>
+                </div>
+                <div class="character-name">LEO WHITEFANG</div>
+            </div>
+
+            <div class="character-card" data-season="base">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_33.png" alt="Nagoriyuki" class="character-img">
+                    <div class="character-type oneshot">One Shot</div>
+                </div>
+                <div class="character-name">NAGORIYUKI</div>
+            </div>
+
+            <div class="character-card" data-season="base">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_35.png" alt="Giovanna" class="character-img">
+                    <div class="character-type rushdown">Rushdown</div>
+                </div>
+                <div class="character-name">GIOVANNA</div>
+            </div>
+
+            <div class="character-card" data-season="base">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_37.png" alt="Anji Mito" class="character-img">
+                    <div class="character-type balance">Balance</div>
+                </div>
+                <div class="character-name">ANJI MITO</div>
+            </div>
+
+            <div class="character-card" data-season="base">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_39.png" alt="I-no" class="character-img">
+                    <div class="character-type rushdown">Rushdown</div>
+                </div>
+                <div class="character-name">I-NO</div>
+            </div>
+            <!--Season Pass 1 Characters-->
+            <div class="character-card" data-season="season1">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_41.png" alt="Goldlewis Dickinson" class="character-img">
+                    <div class="character-type power">Power</div>
+                </div>
+                <div class="character-name">GOLDLEWIS DICKINSON</div>
+            </div>
+
+            <div class="character-card" data-season="season1">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_43.png" alt="Jack'O Valentine" class="character-img">
+                    <div class="character-type unique">Unique</div>
+                </div>
+                <div class="character-name">JACK'O VALENTINE</div>
+            </div>
+
+            <div class="character-card" data-season="season1">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_45.png" alt="Happy Chaos" class="character-img">
+                    <div class="character-type shooting">Shooting</div>
+                </div>
+                <div class="character-name">HAPPY CHAOS</div>
+            </div>
+
+            <div class="character-card" data-season="season1">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_47.png" alt="Baiken" class="character-img">
+                    <div class="character-type balance">Balance</div>
+                </div>
+                <div class="character-name">BAIKEN</div>
+            </div>
+
+            <div class="character-card" data-season="season1">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_49.png" alt="Testament" class="character-img">
+                    <div class="character-type zoning">Zoning</div>
+                </div>
+                <div class="character-name">TESTAMENT</div>
+            </div>
+            <!--Season Pass 2 Characters-->
+            <div class="character-card" data-season="season2">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_51.png" alt="Bridget" class="character-img">
+                    <div class="character-type balance">Balance</div>
+                </div>
+                <div class="character-name">Bridget</div>
+            </div>
+
+            <div class="character-card" data-season="season2">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_53.png" alt="Sin Kiske" class="character-img">
+                    <div class="character-type balance">Balance</div>
+                </div>
+                <div class="character-name">SIN KISKE</div>
+            </div>
+
+            <div class="character-card" data-season="season2">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_55.png" alt="Bedman?" class="character-img">
+                    <div class="character-type unique">Unique</div>
+                </div>
+                <div class="character-name">BEDMAN?</div>
+            </div>
+
+            <div class="character-card" data-season="season2">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_57.png" alt="Asuka R#" class="character-img">
+                    <div class="character-type unique">Unique</div>
+                </div>
+                <div class="character-name">ASUKA R#</div>
+            </div>
+            <!--Season Pass 3 Characters-->
+            <div class="character-card" data-season="season3">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_59.png" alt="Johnny" class="character-img">
+                    <div class="character-type zoning">Zoning</div>
+                </div>
+                <div class="character-name">JOHNNY</div>
+            </div>
+
+            <div class="character-card" data-season="season3">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_61.png" alt="Elphelt Valentine" class="character-img">
+                    <div class="character-type rushdown">Rushdown</div>
+                </div>
+                <div class="character-name">ELPHELT VALENTINE</div>
+            </div>
+
+            <div class="character-card" data-season="season3">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_63.png" alt="A.B.A" class="character-img">
+                    <div class="character-type unique">Unique</div>
+                </div>
+                <div class="character-name">A.B.A</div>
+            </div>
+
+            <div class="character-card" data-season="season3">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_65.png" alt="SLayer" class="character-img">
+                    <div class="character-type power">Power</div>
+                </div>
+                <div class="character-name">SLAYER</div>
+            </div>
+            <!--Season Pass 4 Characters-->
+            <div class="character-card" data-season="season4">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_67.png" alt="Queen Dizzy" class="character-img">
+                    <div class="character-type unique">Unique</div>
+                </div>
+                <div class="character-name">QUEEN DIZZY</div>
+            </div>
+
+            <div class="character-card" data-season="season4">
+                <div class="character-img-container">
+                    <img src="/images/IMAGE_69.png" alt="Venom" class="character-img">
+                    <div class="character-type zoning">Zoning</div>
+                </div>
+                <div class="character-name">VENOM</div>
+            </div>
+        </section>
+
+<!-- Character Details Pop-up -->
+<div id="character-popup-overlay" class="popup-overlay">
+    <div id="character-popup" class="character-popup">
+        <div class="popup-header">
+            <h2 id="popup-character-name">CHARACTER NAME</h2>
+            <button id="popup-close" class="popup-close">&times;</button>
+        </div>
+        <div class="popup-content">
+            <div class="character-sprite">
+                <img id="popup-sprite" src="" alt="Character Sprite">
+                <div class="character-type-badge" id="popup-type">Balance</div>
+            </div>
+            <div class="character-details">
+                <div class="ease-of-use">
+                    <h3>Ease of Use</h3>
+                    <div class="star-rating" id="popup-ease">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                </div>
+                <div class="character-description">
+                    <h3>Character Overview</h3>
+                    <p id="popup-description">Character description goes here. This will include details about the character's playstyle, strengths, and a bit about their backstory.</p>
+                </div>
+                <button id="command-list-btn" class="command-list-btn">VIEW COMMAND LIST</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Command List Modal -->
+<div id="command-list-overlay" class="command-list-overlay">
+    <div id="command-list-modal" class="command-list-modal">
+        <div class="command-list-header">
+            <h2 id="command-list-title">COMMAND LIST</h2>
+            <button id="command-list-close" class="popup-close">&times;</button>
+        </div>
+        <div class="command-list-content">
+            <img id="command-list-img" src="" alt="Character Command List">
+        </div>
+        <button id="back-to-character" class="back-btn">BACK TO CHARACTER</button>
+    </div>
+</div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/images/IMAGE_1.png" alt="Guilty Gear Logo">
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="index.html">Characters</a></li>
+                    <li><a href="../mechanics.html">Game Mechanics</a></li>
+                    <li><a href="../history.html">History</a></li>
+                    <li><a href="../community.html">Community</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Guilty Gear</h4>
+                <div class="social-icons">
+                    <a href="https://x.com/ArcSystemWorksU" class="social-icon">
+                        <img src="/images/IMAGE_6.png" alt="Twitter">
+                    </a>
+                    <a href="https://discord.com/invite/MXGC8JAGyH" class="social-icon">
+                        <img src="/images/IMAGE_7.png" alt="Discord">
+                    </a>
+                    <a href="https://www.youtube.com/@arcsystemworksjapan" class="social-icon">
+                        <img src="/images/IMAGE_8.png" alt="YouTube">
+                    </a>
+                    <a href="https://www.twitch.tv/directory/category/guilty-gear-strive" class="social-icon">
+                        <img src="/images/IMAGE_9.png" alt="Twitch">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Stay Updated</h4>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Guilty Gear Fan Site. This is a student project. All game content belongs to Arc System Works.</p>
+        </div>
+    </footer>
+</body>
+</html>
